@@ -1,0 +1,39 @@
+{
+    "user" : {
+        "fullName": "Xolani Sibisi",
+        "photo" : "images/image1.jpg"
+    },
+    "city" : {
+        "name" : "Richards Bay",
+        "photo" : "images/Richards Bay.jpg",
+        "description" : "A number of factors contributed to the development of Port of Richards Bay in the 1970s. It had become urgent to provide additional rail links between the coast and the mining heartland of the country. It was also necessary to provide a deepwater port to accommodate the new large bulk carriers. From three possible sites for a new harbour the choice fell on Richards Bay for five important reasons: the large lagoon, the ease of dredging, direct link with the national rail network, an adjacent town, Empangeni, to stimulate initial development and ample fresh water."
+    },
+    "foreignLanguage" : {
+        "language" : "Spanish",
+        "phrases" : [{
+            "englishPhrase" : "Good evening",
+            "foreignLanguage" : "Buenas tardes"
+        },
+        {
+            "englishPhrase" : "Good night",
+            "foreignLanguage" : "Buenas noches"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "FullStack Web Development",
+            "description" : "Full stack development is the end-to-end development of applications.",
+            "photo" : "images/coding.png"
+        },
+        {
+            "name" : "Systems Programming",
+            "description" : "Systems programming involves many layers such as the operating system (OS), firmware, and the development environment.",
+            "photo" : "images/globe-grid.png"
+        },
+        {
+            "name" : "Database Management Systems",
+            "description" : "A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system.",
+            "photo" : "images/server.png"
+        }
+    ]
+}
