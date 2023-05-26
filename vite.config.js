@@ -1,7 +1,19 @@
-
 import handlebars from 'vite-plugin-handlebars';
 import data from './data.json';
-export default {
+import { defineConfig } from 'vite';
+
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input : {
+        main: 'index.html',
+        one: 'index-bootstrap.html',
+        tw0: 'index-materialize.html'
+      }
+    },
+  },
+    base : '/responsive_webpages/',   // <-- add this
     plugins: [handlebars({
       context : {
           /*
@@ -10,4 +22,4 @@ export default {
           data   // add this
       }
     })],
-  };
+  });
