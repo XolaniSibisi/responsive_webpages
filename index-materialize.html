@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Page2</title>
 </head>
@@ -13,14 +12,28 @@
   <div class="card-panel teal lighten-2">
     <nav>
       <div class="nav-wrapper">
-  <a class="navbar-brand" href="#"><img src="{{data.user.icon}}" class="img-responsive" width="50px"></a>
-  <ul class="right hide-on-med-and-down">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index-bootstrap.html">Bootstrap</a></li>
-    <li><a href="index-materialize.html">Materialize</a></li>
-  </ul>
+        <a class="navbar-brand" href="#"><img src="{{data.user.icon}}" class="img-responsive" width="50px"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index-bootstrap.html">Bootstrap</a></li>
+          <li><a href="index-materialize.html">Materialize</a></li>
+        </ul>
       </div>
-    </nav><br>
+    </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index-bootstrap.html">Bootstrap</a></li>
+      <li><a href="index-materialize.html">Materialize</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <div class="section">
         <div class="container">
           <div class="row text-center">
