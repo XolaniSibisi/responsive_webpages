@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Page2</title>
+    <title>Materialize Page</title>
 </head>
-<body>
-  <div class="card-panel teal lighten-2">
+<body style="background-color: #2ec4b6;">
+  <style>
+    .container{
+      border: 2px solid black;
+      margin: auto;
+      border-radius: 1em;
+      padding: 10px;
+    }
+  </style>
     <nav>
       <div class="nav-wrapper">
         <a class="navbar-brand" href="#"><img src="{{data.user.icon}}" class="img-responsive" width="50px"></a>
@@ -34,6 +41,7 @@
   });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <h1 class="center-align">WELCOME TO MY WEBPAGE</h1>
     <div class="section">
         <div class="container">
           <div class="row text-center">
@@ -51,20 +59,20 @@
             <h1 class="center-align">{{data.city.name}}</h1><br>
             <div class="row text-center">
                 <div class="grid-example col s12 m6 l6">
-                    <img src= "{{data.city.photo}}" width="250px" alt="city">
+                    <img src= "{{data.city.photo}}" width="280px" height="220px" alt="city">
                 </div>
                 <div class="grid-example col s12 m6 l6">
-                    <p>{{data.city.description}}</p>
+                    <p class="center-align">{{data.city.description}}</p>
                 </div>
             </div>
         </div>
       </div>
       <div class="section">
         <div class="container">
+          <h4>The Foreign Language That I Would Like To Learn</h4>
           <h3 float-start>{{data.foreignLanguage.language}}</h3>
-          <p float-start>The language I would like to learn is Spanish, one of the top tier language for me as I would one like to work internationally one day, specifically in this country as I like their culture, weather and their love for football.</p>
-        </div>
-        <div class="container">
+          <p float-start>Spanish is one of the most spoken languages world wide and a top tier language for me as I would one like to visit the country one day, What interest me most about this country is their culture, weather, and their love for football since I am also a big fan of football.</p><br>
+          <h5 class="center-align"><strong>In a table below are Spanish phrases translated in English</strong></h5>
           <table class="bordered">
             <tr>
               <th scope="col">English Phrase</th>
@@ -81,7 +89,8 @@
       </div>
       <div class="section">
         <div class="container">
-          <h3>Favourite Subjects</h3><br>
+          <h3>Favourite Subjects</h3>
+          <h4 class="center-align"><strong>BSc Honours @ The University Of Zululand</strong></h4>
           <div class="container-fluid">
             <div class="row">
               {{#each data.favouriteSubjects}}
